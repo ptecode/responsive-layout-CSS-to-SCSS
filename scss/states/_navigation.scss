@@ -1,0 +1,60 @@
+
+// ===============================
+// Navigation
+// ===============================
+
+.name {
+    @extend %text-upper;
+    @include text($weight: $font-weight--bold, $size: 1.8em);
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    @include respond-to(medium) {
+        display: inline-block;
+    }
+    @include respond-to(large) {
+        float: left;
+    }
+}
+
+
+.toggle-nav {
+    @extend %nav-item;
+    @extend %nav-item-link;
+    width: 100%;
+    font-size: 1.5em;
+    padding: 0.25em;
+    cursor: pointer;
+    &:hover {
+      @extend %nav-item-on;
+    }
+    @include respond-to(medium) {
+      display: none;
+    }
+}
+
+
+.main-nav {
+    li {
+        @extend %nav-item;
+        @extend %text-upper;
+        @include respond-to(medium) {
+            display: inline-block;
+            margin-right: 0.5em;
+        }
+    }
+    a {
+        @extend %nav-item-link;
+        padding: .5em .75em;
+        font-size: 1.1em;
+        &:hover {
+            @extend %nav-item-on;
+        }
+        @include respond-to(medium) {
+            padding: .25em .5em;
+        }
+    }
+    @include respond-to(large) {
+        display: inline-block;
+        float: right;
+    }
+}

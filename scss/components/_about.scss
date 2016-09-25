@@ -1,0 +1,45 @@
+
+// ===============================
+// About section
+// ===============================
+
+.profile-image {
+    @include add-border;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: $color-img--bg;
+    margin: 1em auto;
+    @include respond-to(large) {
+        width: 225px;
+        height: 225px;
+    }
+}
+
+.intro {
+    @include text;
+    margin-top: 0;
+    @include respond-to(medium) {
+        width: 60%;
+        text-align: left;
+        padding-top: 2%;
+        padding-right: 5%;
+        padding-left: 2.5%;
+    }
+    @include respond-to(large) {
+        padding-top: 2.5%;
+    }
+}
+
+
+.img-container {
+    @include respond-to(medium) {
+        width: 40%;
+        float: right;
+    }
+}
+
+.title {
+    display: none;
+}
+

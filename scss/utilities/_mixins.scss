@@ -1,0 +1,40 @@
+
+// =========================
+// Mixins
+// =========================
+
+// ------ Border ------ //
+
+@mixin add-border($position: all, $br-width: $br-thick, $color: $color-primary, $style: $br-style) {
+  @if $position == all {
+    border: $br-width $style $color;
+  }
+  @else {
+    border-#{$position}: $br-width $style $color;
+  }
+}
+
+
+// ------ Font Styles ------ //
+
+@mixin text($color: $color-primary, $weight: null, $size: null) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+
+// ------ Media Queries ------ //
+
+@mixin respond-to($brk-pt) {
+  @if $brk-pt == "small" {
+    @media (min-width: $break-small) and (max-width: $break-medium - 1) { @content; }
+  }
+  @else if $brk-pt == "medium" {
+    @media (min-width: $break-medium) { @content; }
+  }
+  @else if $brk-pt == "large" {
+    @media (min-width: $break-large) { @content; }
+  }
+}
+

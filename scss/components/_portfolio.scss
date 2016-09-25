@@ -1,0 +1,20 @@
+
+// ===============================
+// Portfolio section
+// ===============================
+
+.project-list li {
+    margin-bottom: 2em;
+    @include respond-to(medium) {
+        display: inline-block;
+        width: 50%;
+        margin-right: -4px;
+        padding-left: 1em;
+        padding-right: 1em;
+        vertical-align: top;
+    }
+    @include respond-to(large) {
+        width: 33.33%;
+    }
+}
+

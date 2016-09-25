@@ -1,0 +1,39 @@
+
+// ===============================
+// Layout Containers
+// ===============================
+
+.wrapper {
+    width: 93%;
+    margin: 0 auto;
+    text-align: center;
+    @include respond-to(medium) {
+        width: 80%;
+    }
+}
+
+header {
+    @extend %container;
+    padding: 1em 0 2em;
+}
+
+.about {
+    @extend %container;
+    padding-bottom: 2em;
+}
+
+section {
+    margin-bottom: 2.5em;
+}
+
+#contact {
+    @extend %container;
+    margin-bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+footer {
+    @extend %container;
+}
+

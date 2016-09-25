@@ -1,0 +1,30 @@
+
+// ------- Placeholders ------- //
+
+%container {
+    background: $color-secondary;
+}
+
+
+%text-upper {
+    text-transform: uppercase;
+}
+
+
+%nav-item {
+    @include add-border;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    background: $color-base;
+}
+
+%nav-item-link {
+    @include text($color-secondary, $font-weight--medium);
+    display: block;
+    transition: $trns-duration;
+}
+
+%nav-item-on {
+    background: $color-primary;
+}
+

@@ -1,0 +1,35 @@
+// ===============================
+// Contact section
+// ===============================
+
+.contact li,
+span a {
+    @include text;
+}
+
+.contact {
+    h2 {
+        @include text($weight: $font-weight--medium, $size: 1.3em);
+        margin-bottom: 1em;
+    }
+    p {
+        @include text($weight: $font-weight--light, $size: 0.9em);
+    }
+    span {
+        @include text($weight: $font-weight--medium);
+        padding-left: 1em;
+    }
+    @include respond-to(medium) {
+        width: 65%;
+        margin: 0 auto;
+    }
+    @include respond-to(large) {
+        width: 50%;
+    }
+
+}
+
+span:hover,
+span a:hover {
+    color: $color-accent;
+}

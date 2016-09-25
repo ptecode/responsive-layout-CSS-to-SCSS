@@ -1,0 +1,66 @@
+
+// =========================
+// Variables
+// =========================
+
+// -------- Font Stacks ------- //
+
+$font-family--primary : 'Roboto', sans-serif;
+
+// ------- Text ----- //
+
+$base--font-size      : 16px;
+$base--line-height    : 1.5;
+
+// -------- Font Weights ------ //
+
+$font-weight--light   : 300;
+$font-weight--base    : 400;
+$font-weight--medium  : 500;
+$font-weight--bold    : 700;
+
+
+// ------- Descriptive Base Colors ----- //
+
+$white                : #fff;
+$gold                 : #ffd700;
+$sea-green            : #2e8b57;
+$peach-puff           : #ffdab9;
+$twilight-blue        : #f0ffff;
+$violet               : rgb(168, 69, 255); // #a845ff  //
+$bright-turquoise     : rgb(5, 221, 238); // #05ddee  //
+$wheat                : #f5deb3;
+
+
+// ------- Color Usage ----- //
+
+$color-primary        : $gold;
+$color-secondary      : $sea-green;
+$color-accent         : $wheat;
+$color-img--bg        : $peach-puff;
+$color-theme--bg      : $twilight-blue;
+$color-theme--dark    : $violet;
+$color-theme--light   : $bright-turquoise;
+$color-base           : $white;
+
+
+// -------- Border Style ------- //
+$br-style             : solid;
+
+
+// -------- Border Width ------- //
+
+$br-thin              : 1px;
+$br-medium            : 2px;
+$br-thick             : 3px;
+
+// -------- Transitions ------- //
+
+$trns-duration        : 0.3s;
+
+
+// -------- Break Points ------- //
+
+$break-small          : 1px;
+$break-medium         : 768px;
+$break-large          : 1024px;

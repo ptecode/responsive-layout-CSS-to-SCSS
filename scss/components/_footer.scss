@@ -1,0 +1,64 @@
+
+// ===============================
+// Footer
+// ===============================
+
+
+.footer-nav {
+    display: none;
+    @include respond-to(medium) {
+        display: initial;
+        float: right;
+    }
+    li {
+        @extend %text-upper;
+        @include respond-to(medium) {
+            float: left;
+            margin-left: 1em;
+            margin-top: 10%;
+        }
+    }
+    a {
+        @include respond-to(medium) {
+            @include text($weight: $font-weight--bold, $size: 1em);
+            display: block;
+            padding: 0.25em;
+        }
+    }
+}
+
+.bottom-name,
+.back-to-top {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.bottom-name {
+    @extend %text-upper;
+    @include text($weight: $font-weight--bold, $size: 1.3em);
+    float: left;
+    @include respond-to(large) {
+        margin-top: 4%;
+    }
+}
+
+
+.back-to-top {
+    @extend %text-upper;
+    @include text($weight: $font-weight--bold, $size: 1.1em);
+    float: right;
+    padding: 0.25em;
+    @include respond-to(medium) {
+        display: none;
+    }
+}
+
+.back-to-top:hover,
+.footer-nav a:hover {
+    @include add-border(bottom, $br-medium);
+}
+
+footer .wrapper {
+    @include add-border(top, $br-thin, $color-accent);
+}
+
