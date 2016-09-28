@@ -20,7 +20,7 @@
     }
     a {
         @include respond-to(medium) {
-            @include text($weight: $font-weight--bold, $size: 1em);
+            @include text($weight: $font-weight--bold, $size: $font-size--regular);
             display: block;
             padding: 0.25em;
         }
@@ -35,7 +35,7 @@
 
 .bottom-name {
     @extend %text-upper;
-    @include text($weight: $font-weight--bold, $size: 1.3em);
+    @include text($weight: $font-weight--bold, $size: $font-size--large);
     float: left;
     @include respond-to(large) {
         margin-top: 4%;
@@ -45,7 +45,7 @@
 
 .back-to-top {
     @extend %text-upper;
-    @include text($weight: $font-weight--bold, $size: 1.1em);
+    @include text($weight: $font-weight--bold, $size: $font-size--medium);
     float: right;
     padding: 0.25em;
     @include respond-to(medium) {

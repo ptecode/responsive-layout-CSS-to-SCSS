@@ -11,7 +11,7 @@
 
 
 .skills-list li {
-    @include text($color-base, $font-weight--medium, 0.9em);
+    @include text($color-base, $font-weight--medium, $font-size--small);
     @include add-border($br-width: $br-medium, $color: $color-theme--dark);
     display: inline-block;
     width: 27%;
@@ -35,7 +35,7 @@
     }
     @include respond-to(medium) {
         width: 20%;
-        font-size: 1em;
+        font-size: $font-size--regular;
     }
     @include respond-to(large) {
         width: 12%;

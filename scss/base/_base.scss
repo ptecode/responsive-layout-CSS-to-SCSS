@@ -27,7 +27,7 @@ img {
 
 h2 {
     @extend %text-upper;
-    @include text($color-secondary, $font-weight--bold, 1.4em);
+    @include text($color-secondary, $font-weight--bold, $font-size--x-large);
     margin-bottom: 1.7em;
 }
 

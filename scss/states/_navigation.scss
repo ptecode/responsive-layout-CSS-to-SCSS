@@ -5,7 +5,7 @@
 
 .name {
     @extend %text-upper;
-    @include text($weight: $font-weight--bold, $size: 1.8em);
+    @include text($weight: $font-weight--bold, $size: $font-size--xxx-large);
     margin-bottom: 0.5em;
     margin-top: 0;
     @include respond-to(medium) {
@@ -21,7 +21,7 @@
     @extend %nav-item;
     @extend %nav-item-link;
     width: 100%;
-    font-size: 1.5em;
+    font-size: $font-size--xx-large;
     padding: 0.25em;
     cursor: pointer;
     &:hover {
@@ -45,7 +45,7 @@
     a {
         @extend %nav-item-link;
         padding: .5em .75em;
-        font-size: 1.1em;
+        font-size: $font-size--medium;
         &:hover {
             @extend %nav-item-on;
         }

@@ -9,11 +9,11 @@ span a {
 
 .contact {
     h2 {
-        @include text($weight: $font-weight--medium, $size: 1.3em);
+        @include text($weight: $font-weight--medium, $size: $font-size--large);
         margin-bottom: 1em;
     }
     p {
-        @include text($weight: $font-weight--light, $size: 0.9em);
+        @include text($weight: $font-weight--light, $size: $font-size--small);
     }
     span {
         @include text($weight: $font-weight--medium);
